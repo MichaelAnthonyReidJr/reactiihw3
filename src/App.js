@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Animals } from './Animals'
 
 function App() {
+  const animals = [
+    {id:1, typeOfAnimal: "dog"}, 
+    {id:2, typeOfAnimal: "cat"},
+    {id:3, typeOfAnimal: "chicken"},
+    {id:4, typeOfAnimal: "cow"}, 
+    {id:5, typeOfAnimal: "sheep"},
+    {id:6, typeOfAnimal: "horse"},
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div><Animals data = {animals}></Animals></div>
   );
 }
 
 export default App;
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
